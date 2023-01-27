@@ -25,13 +25,13 @@ else:
 async def start(client,message):
 	insert(int(message.chat.id))
 	await message.reply_text(text =f"""
-	Hello {wish} {message.from_user.first_name }
-	__I am file renamer bot, Please sent any telegram 
-	**Document Or Video** and enter new filename to rename it__
-	""",reply_to_message_id = message.message_id ,  
-	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]  ]))
+	السلام عليكم يا {message.from_user.first_name }
+	أنا بوت أقوم بإعادة تسمية الملفات , فقط أرسل أي ملف و اضغط rename و اكتب الاسم الجديد 
+	لبقية البوتات هنا 
+	https://t.me/ibnAlQyyim/1120
+	لدعم استمرار المشروع هنا 
+	http://paypal.me/kelectronic89
+	""")
 
 
 
