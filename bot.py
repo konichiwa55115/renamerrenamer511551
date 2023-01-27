@@ -1,11 +1,11 @@
 from pyrogram import Client
 import os
 
-TOKEN = os.environ.get("TOKEN", "")
+TOKEN = os.environ.get("TOKEN", "5476404763:AAFrzXKJESgBDzpO2BU5roOtauxZ0Y3EzpY")
 
-API_ID = int(os.environ.get("API_ID", ""))
+API_ID = int(os.environ.get("API_ID", "17983098"))
 
-API_HASH = os.environ.get("API_HASH", "")
+API_HASH = os.environ.get("API_HASH", "ee28199396e0925f1f44d945ac174f64")
 
 if __name__ == "__main__" :
     plugins = dict(
