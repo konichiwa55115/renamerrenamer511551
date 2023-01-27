@@ -44,7 +44,7 @@ async def send_doc(client,message):
        		await client.get_chat_member(update_channel, user_id)
        	except UserNotParticipant:
        		await message.reply_text("**__You are not subscribed my channel__** ",reply_to_message_id = message.message_id, reply_markup = InlineKeyboardMarkup([ [ InlineKeyboardButton("Support 🇮🇳" ,url=f"https://t.me/{update_channel}") ]   ]))
-       		return
+       		pass
        date = message.date
        _used_date = find_one(user_id)
        used_date = _used_date["date"]      
