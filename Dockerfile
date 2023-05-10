@@ -22,4 +22,4 @@ WORKDIR /LazyDeveloper
 COPY start.sh /start.sh
 
 # Running MessageSearchBot
-CMD ["/bin/sed", "-i", "'s/\r//g'", "/start.sh","&&","/bin/bash", "/start.sh"]
+CMD ["/bin/bash", "/start.sh"]
