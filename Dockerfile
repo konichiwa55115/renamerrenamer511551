@@ -7,6 +7,7 @@ FROM python:latest
 # Installing Packages
 RUN apt update && apt upgrade -y
 RUN apt install git curl python3-pip ffmpeg -y
+RUN apt install dos2unix
 
 # Updating Pip Packages
 RUN pip3 install -U pip
@@ -22,5 +23,5 @@ WORKDIR /LazyDeveloper
 COPY start.sh /start.sh
 
 # Running MessageSearchBot
-CMD ["/bin/sed","-i","'s/\r//g'", "/start.sh"]
+CMD ["/bin/dos2unix", "/start.sh"]
 CMD ["/bin/bash", "/start.sh"]
