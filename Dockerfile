@@ -12,15 +12,12 @@ RUN apt install git curl python3-pip ffmpeg -y
 RUN pip3 install -U pip
 
 # Copying Requirements
-COPY requirements.txt /requirements.txt
 
 # Installing Requirements
-RUN cd /
 RUN pip3 install -U -r requirements.txt
-RUN mkdir /LazyDeveloper
-WORKDIR /LazyDeveloper
-COPY bot.py /bot.py
+WORKDIR renamerrenamer511551
+
 
 
 # Running MessageSearchBot
-CMD ["python3", "/bot.py"]
+CMD ["python3", "bot.py"]
