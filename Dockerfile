@@ -19,7 +19,8 @@ RUN cd /
 RUN pip3 install -U -r requirements.txt
 RUN mkdir /LazyDeveloper
 WORKDIR /LazyDeveloper
-COPY start.sh /start.sh
+COPY bot.py /bot.py
+
 
 # Running MessageSearchBot
-CMD ["/bin/bash", "/start.sh"]
+CMD ["python3", "/bot.py"]
