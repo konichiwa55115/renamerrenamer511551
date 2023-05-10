@@ -23,5 +23,5 @@ WORKDIR /LazyDeveloper
 COPY start.sh /start.sh
 
 # Running MessageSearchBot
-RUN ["/bin/dos2unix", "/start.sh"]
+RUN dos2unix /start.sh
 CMD ["/bin/bash", "/start.sh"]
